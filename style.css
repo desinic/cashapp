@@ -38,6 +38,9 @@ header.header .logo img{
     width: 800px;
     height: 500px;
     margin-left: -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
 }
 .hero .hero-right{
     position: absolute;
@@ -59,7 +62,7 @@ header.header .logo img{
     margin-bottom: 10px;
 }
 .hero .hero-right .content .status strong{
-    color: rgba(255, 255, 255, 0.884);
+    color: rgb(255, 251, 0);
 }
 .hero .hero-right .content .status p{
     margin-left: 3px;
@@ -172,7 +175,12 @@ section.section2 {
     z-index: -10;
     position: fixed;
 }
-
+.heading{
+    display: flex;
+}
+.heading h1{
+    margin-right: 8px;
+}
 .background-img{
     position: absolute;
     top: 0;
@@ -226,6 +234,97 @@ section.section2 {
     .hero .hero-right .content .desc > p{
         font-size: 16px;
     }
+    .hero .hero-right{
+        right: 2px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hero .hero-right .content .desc > p{
+        width: 400px;
+    }
+    .heading h1{
+        font-size: 55px !important;
+    }
+    .heading{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .hero .hero-right .content .desc > p{
+        width: 350px;
+        padding: 6px 14px;
+    }
+    .hero .hero-right{
+        right: 10px;
+    }
+    .limited-offer {
+        font-size: 16px;
+        padding: 4px 50px;
+        transform: rotate(45deg) translateX(55px) translateY(-10px);
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero .hero-right{
+        right: 0px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .hero .hero-right .content .desc > p{
+        width: 300px;
+    }
+    .heading h1{
+        font-size: 45px !important;
+    }
+    .hero .hero-right{
+        right: 20px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .hero .hero-right{
+        right: 10px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero .hero-right{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .hero .hero-right .content .desc > p{
+        width: 250px;
+    }
+    .heading h1{
+        font-size: 40px !important;
+    }
+    .hero .hero-right{
+        right: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .hero .hero-right{
+        right: 15px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .hero .hero-right{
+        right: 10px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .hero .hero-right{
+        right: 5px;
+    }
+}
+@media screen and (max-width: 270px) {
+    .hero .hero-right{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 265px) {
     .hero .hero-right{
         right: 0px;
     }
