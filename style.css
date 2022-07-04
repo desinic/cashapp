@@ -14,8 +14,10 @@ header.header{
     top: 0;
     right: 0;
 }
-header.header .logo img{
-    height: 1px;
+header.header .logo a img{
+    position: relative;
+    height: 100px;
+    z-index: -100 !important;
 }
 .cashapp img{
     width: 200px;
@@ -45,7 +47,7 @@ header.header .logo img{
 .hero .hero-right{
     position: absolute;
     right: 50px;
-    z-index: 100;
+    z-index: 10;
 }
 .hero .hero-right .content{
     display: flex;
@@ -162,7 +164,7 @@ section.section2 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: -10;
 }
 
 .overlay{
@@ -189,7 +191,7 @@ section.section2 {
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    z-index: -100;
+    z-index: -10;
     width: 1500px;
     height: 700px;
 }
